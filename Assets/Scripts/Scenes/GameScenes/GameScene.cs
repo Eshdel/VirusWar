@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class GameScene : Scene
 {
     private List<Player> _players;
+
     [SerializeField] private InputHandler inputHandler;
 
     public void AddPlayer(Player player) {
