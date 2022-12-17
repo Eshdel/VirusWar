@@ -749,11 +749,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: 536c685e-d90b-4ac1-9b3b-62087f3b7f39
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: VirusWar
+  organizationId: miarel
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
