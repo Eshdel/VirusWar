@@ -5,9 +5,9 @@ using UnityEngine.Events;
 
 public class InputHandler : MonoBehaviour
 {
-    public static UnityEvent<EnemyCell> OnClickEnemyCell;
-    public static UnityEvent<PlayerCell> OnClickPlayerCell;
-    public static UnityEvent<NeutralCell> OnClickNeutralCell;
+    public static UnityEvent<EnemyCell> OnClickEnemyCell = new UnityEvent<EnemyCell>();
+    public static UnityEvent<PlayerCell> OnClickPlayerCell = new UnityEvent<PlayerCell>();
+    public static UnityEvent<NeutralCell> OnClickNeutralCell = new UnityEvent<NeutralCell>();
 
     
     private void Update()
