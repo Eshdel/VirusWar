@@ -6,7 +6,7 @@ public abstract class GameScene : Scene
 {
     private List<Player> _players;
 
-    [SerializeField] private InputHandler inputHandler;
+    [SerializeField] protected InputHandler inputHandler;
 
     public void AddPlayer(Player player) {
         _players.Add(player);
