@@ -8,7 +8,6 @@ abstract public class Scene : MonoBehaviour
 {
     public string Name { get; protected set; } = "Empty Scene Name";
 
-   
     public abstract void Start();
   
     public abstract void Update();
