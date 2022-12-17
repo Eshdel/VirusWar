@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Cell : MonoBehaviour
 {
-    [SerializeField] private int score;
+    [SerializeField] private int dnaCount;
     [SerializeField] private int dnaCapacity;
     [SerializeField] private float reproductionSpeed;
 }
