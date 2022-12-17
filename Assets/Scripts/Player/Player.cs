@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public abstract class Player : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnitRepository UnitRepository;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public abstract void MakeTurn(Cell selfCell,Cell enemyCell);
 }
