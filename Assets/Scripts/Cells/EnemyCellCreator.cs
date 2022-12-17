@@ -6,11 +6,12 @@ public class EnemyCellCreator : CellCreator
 {
     private List<EnemyCell> _creationCells = new List<EnemyCell>();
 
-    private EnemyCell CreateEnemyCell() {
+    private EnemyCell CreateEnemyCell() 
+    {
 
         var spawnPos = Vector3.one;
-
         var enemyCell = Instantiate(prefab, spawnPos, Quaternion.identity).AddComponent<EnemyCell>();
+        enemyCell.name = $"enemyCell";
 
         return enemyCell;
     }
@@ -19,7 +20,7 @@ public class EnemyCellCreator : CellCreator
     private EnemyCell CreateEnemyCellAt(Vector3 spawnPos)
     {
         var enemyCell = Instantiate(prefab, spawnPos, Quaternion.identity).AddComponent<EnemyCell>();
-       
+        enemyCell.name = $"enemyCell";
         return enemyCell;
     }
 

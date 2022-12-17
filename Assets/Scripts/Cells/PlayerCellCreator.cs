@@ -10,13 +10,14 @@ public class PlayerCellCreator : CellCreator
     {
         var spawnPos = Vector3.one;
         var playerCell = Instantiate(prefab, spawnPos, Quaternion.identity).AddComponent<PlayerCell>();
-
+        playerCell.name = $"playerCell";
         return playerCell;
     }
 
     private PlayerCell CreatePlayerCellAt(Vector3 pos)
     {
         var playerCell = Instantiate(prefab, pos, Quaternion.identity).AddComponent<PlayerCell>();
+        playerCell.name = $"playerCell";
         
         return new PlayerCell();
     }

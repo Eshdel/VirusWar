@@ -6,6 +6,7 @@ using UnityEngine;
 public class Tutorial:GameScene
 {
     [SerializeField] CellCreator _enemyCellCreator;
+    [SerializeField] CellCreator _neutralCellCreator;
     [SerializeField] CellCreator _playerCellCreator;
 
     public IEnumerator deleay()
@@ -18,16 +19,15 @@ public class Tutorial:GameScene
     {
         Name = "Tutorial";
 
-        _enemyCellCreator.CreateCellAt(Vector3.zero);
+        _enemyCellCreator.CreateCellAt(new Vector3 (0,0,0));
         
-        _enemyCellCreator.CreateCellAt(Vector3.one);
+        _neutralCellCreator.CreateCellAt(new Vector3 (2,0,0));
 
-        _playerCellCreator.CreateCellAt(Vector3.down);
+        _playerCellCreator.CreateCellAt(new Vector3 (4,0,0));
 
     }
 
     public override void Update()
     {
-        
     }
 }
